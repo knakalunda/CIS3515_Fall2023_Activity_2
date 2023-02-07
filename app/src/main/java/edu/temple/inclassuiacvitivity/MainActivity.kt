@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         /* Step 1: Populate this array */
         //val numberArray = Array Of Numbers
-        val numberArray = Array<Float>(50) { it*2.0f };
+        val numberArray = Array<Float>(50) { (it+1)*2.0f };
 
         /* Step 2: Create adapter to display items from array in Spinner */
         spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, numberArray)
